@@ -11,7 +11,7 @@ $(function () {
     $main.onepage_scroll({
         sectionContainer: 'section',
         easing: "ease",
-        animationTime: 1000,
+        animationTime: 5000,
         pagination: true,
         updateURL: false,
         beforeMove: function(index) {},
@@ -39,5 +39,11 @@ $(function () {
     var bg = bgcolor[today.getDate()%3];
     $info.removeClass('bggreen').addClass(bg);
 
+    // set info bgcolor
+    var $aboutme = $('.aboutme');
+    var bgcolor_aboutme = ['bggreen', 'bgblue', 'bgpurple'];
+    //var today = new Date();
+    var bg_aboutme = bgcolor_aboutme[today.getTime()%3];
+    $aboutme.removeClass('bgred').addClass(bg_aboutme);
 
 });
