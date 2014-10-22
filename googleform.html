@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CUSTOM GOOGLE FORM</title>
+</head>
+
+<body>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<form id="input-form" action="" method="POST" target="no-target">
+
+
+  <input id="input-name" placeholder="enter name" name="name">
+
+  <div class=col-sm-4><div class=form-group><label for=input-email>Email</label><input type=email class=form-control id=input-email name=input-email placeholder=""></div></div>
+
+        <div class=col-sm-4><div class=form-group><label for=input-subject>Subject</label><input class=form-control id=input-subject name=input-subject placeholder=""></div></div></div>
+
+        <div class=form-group><label for=input-text>Message</label><textarea name=input-text id=input-text class=form-control rows=9></textarea></div>
+
+  <button id="form-submit" type="submit">SUBMIT</button>
+</form>
+
+<iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+ 
+                
+<script>
+
+//data: {"entry.432711719" : name, "entry.275249920" : email, "entry.331510409": subject
+
+    $('#input-form').one('submit',function(){
+        var inputName = encodeURIComponent($('#input-name').val());
+        var emailcontainer= '&entry.275249920=';
+        var inputEmail = encodeURIComponent($('#input-email').val());
+        var subcontainer= '&entry.331510409=';
+        var inputSubject = encodeURIComponent($('#input-subject').val());
+        var msgcontainer= '&entry.1264875755=';
+        var inputMessage = encodeURIComponent($('#input-text').val());
+        var baseURL = 'https://docs.google.com/forms/d/1khYAoUtq2AT4RiI4HDsNC6sAwknfp6QxwmG-v2xlIhs/formResponse?entry.432711719=';
+
+        var submitRef = '&submit=Submit';
+        var submitURL = (baseURL + inputName + emailcontainer + inputEmail + subcontainer + inputSubject + msgcontainer + inputMessage + submitRef);
+        console.log(submitURL);
+        $(this)[0].action=submitURL;
+        alert("Thank You");
+        $('#input-name').addClass('active').val('Thank You!');
+    });
+</script>
+
+
+
+
+</body>
+</html>
