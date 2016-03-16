@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Luc
+ * User: Abhishek
  * Date: 02/10/2014
  * Time: 20:00
  */
@@ -9,10 +9,10 @@
 require 'includes/PHPMailer-master/PHPMailerAutoload.php';
 
 //form data
-$sName = trim(strip_tags($_GET['input-name']));
-$sEmail = trim(strip_tags($_GET['input-email']));
-$sSubject = htmlentities(strip_tags($_GET['input-subject']));
-$sText = htmlentities($_GET['input-text']);
+$sName = trim(strip_tags($_POST['input-name']));
+$sEmail = trim(strip_tags($_POST['input-email']));
+$sSubject = htmlentities(strip_tags($_POST['input-subject']));
+$sText = htmlentities($_POST['input-text']);
 
 $aErrors = array();
 
@@ -36,16 +36,10 @@ if (empty($aErrors)) {
     // the email address where the script will email the form results to
     // from the form
 
-    /*
-    In Ubuntu (at least 12.04) it seems sendmail is not installed by default. You will have to install it using the command 
-    sudo apt-get install sendmail-bin
-
-    You may also need to configure the proper permissions for it as mentioned above.
-    */
 
     $mail = new PHPMailer;
 
-    $mail->SMTPDebug = 3;                               // Enable verbose debug output
+//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
     $mail->From = $sEmail;
     $mail->FromName = $sEmail;
@@ -62,7 +56,6 @@ if (empty($aErrors)) {
     if ($mail->send()) {
         $aReturn = array('success' => true);
     } else {
-        echo "Mailer Error: " . $mail->ErrorInfo;
         $aReturn = array('success' => false, 'reason' => 0);
     }
 
