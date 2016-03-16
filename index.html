@@ -48,7 +48,7 @@
 						<li class="active nav-home"><a href=#home class=goto><span>Home</span></a></li>
 						<li class=nav-about><a href=#about class=goto><span>About me</span></a></li>
 						<li class=nav-resume><a href=#resume class=goto><span>Resume</span></a></li>
-						<li class=nav-blog><span onclick="goToBlog()">Blog</span></li>
+						<li class=nav-blog><a href=#resume class=goto><span onclick="goToBlog()">Blog</span></a></li>
 						<!--<li class=nav-contact><a href=#contact class=goto><span>Contact</span></a></li> -->
 					</ul>
 				</div>
@@ -569,6 +569,7 @@
 	<script src=scripts/fancyBoxScript.js></script>
 	<script type="text/javascript">
 		function goToBlog(){
+			console.log("onclick");
 			var win = window.open(url, 'http://blog.abhishek-maharjan.com.np');
   			win.focus();
 		}
