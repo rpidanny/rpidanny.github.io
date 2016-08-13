@@ -16,7 +16,7 @@ var filesToCache = [
   '/fancyBox/source/jquery.fancybox.css?v=2.1.5',
   '/styles/main.css',
   '/styles/vendor.css',
-  'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css',
+  '/styles/bootstrap.min.css',
 
 ];
 
