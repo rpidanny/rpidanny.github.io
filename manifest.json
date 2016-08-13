@@ -1,0 +1,16 @@
+{
+  "name":"Abhishek Maharjan",
+  "Short_name":"Abhishek",
+  "start_url":"/",
+  "scope":"/",
+  "display":"standalone",
+  "theme_color":"#9C27B0",
+  "background-color":"#333",
+  "icons":[
+    {
+      "src":"/thinking.png",
+      "size":"512x512",
+      "type":"image/png"
+    }
+  ]
+}
