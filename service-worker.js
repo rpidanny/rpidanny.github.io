@@ -1,23 +1,26 @@
-var cacheName = 'test-6';
+var cacheName = 'cache-7';
 var filesToCache = [
   '/',
   '/index.html',
-  '/thinking.png',
+  '/favicon.png',
   '/manifest.json',
-  '/fancyBox/lib/jquery-1.10.1.min.js',
-  '/fancyBox/source/jquery.fancybox.js?v=2.1.5',
-  '/scripts/fancyBoxScript.js',
+  '/scripts/bootstrap.min.js',
+  '/scripts/EasePack.min.js',
+  '/scripts/jquery.min.js',
   '/scripts/vendor.js',
   '/scripts/plugins.js',
   '/scripts/main.js',
-  '/images/to-top@2x.png',
-  '/images/vcard.png',
-  '/images/abhishek1.jpg',
-  '/fancyBox/source/jquery.fancybox.css?v=2.1.5',
+  '/scripts/rAF.js',
+  '/scripts/TweenLite.min.js',
   '/styles/main.css',
   '/styles/vendor.css',
   '/styles/bootstrap.min.css',
-
+  '/styles/fonts/glyphicons-halflings-regular.woff',
+  '/styles/fonts/socicon-webfont.woff',
+  '/images/abhishek1.jpg',
+  '/images/vcard.png',
+  '/images/to-top@2x.png',
+  '/images/jGIGWOA.jpg'
 ];
 
 self.addEventListener('install', function(e) {
