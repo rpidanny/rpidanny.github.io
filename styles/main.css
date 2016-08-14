@@ -563,6 +563,64 @@ a {
   animation-delay: -0.8s;
 }
 
+.ico > a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+p > a {
+    color: #000;
+    text-decoration: none;
+}
+
+header{
+  display: none;
+}
+
+.quotes{
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quote-body {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+.quote-by{
+  text-align: right;
+}
+/* =Blockquote
+-------------------------------------------------------------- */
+blockquote {
+    position: relative;
+    marign: 0;
+    padding: 30px 120px;
+    text-align: center;
+    font-size: 30px;
+}
+blockquote:before, blockquote:after {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 120px;
+    line-height: 1;
+}
+blockquote:before {
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    top: 0;
+    right: 0;
+    content: "\201D";
+}
+
 @-webkit-keyframes stretchdelay {
   0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
   20% { -webkit-transform: scaleY(1.0) }
@@ -622,6 +680,11 @@ a {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
+
+  .quotes{
+    width: 70%;
+  }
+
   .content {
     width: 400px;
   }
@@ -659,7 +722,9 @@ a {
   /*header{
       display:none;
   }*/
-
+  .quotes{
+    width: 95%;
+  }
   .content {
     width: 100%;
   }
@@ -714,18 +779,4 @@ a {
     .main-title{
       font-size: 2em;
     }
-}
-
-.ico > a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-p > a {
-    color: #000;
-    text-decoration: none;
-}
-
-header{
-  display: none;
 }
