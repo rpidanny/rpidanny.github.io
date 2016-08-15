@@ -18,6 +18,7 @@ var filesToCache = [
   '/styles/bootstrap.min.css',
   '/styles/fonts/glyphicons-halflings-regular.woff',
   '/styles/fonts/socicon-webfont.woff',
+  '/styles/animate.css',
   '/images/abhishek1.jpg',
   '/images/vcard.png',
   '/images/to-top@2x.png',
