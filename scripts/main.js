@@ -340,4 +340,21 @@
         }
     });
     };
+
+    setTimeout(function(){
+      var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+      $("#main-title").removeClass('animated rollIn');
+      $("#main-title").addClass('animated hinge').one(animationEnd,function(){
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top-50
+        },{
+          duration:400,
+          complete:function(){
+            $('#main-title').removeClass("animated hinge");
+            $("#main-title").addClass('animated rubberBand infinite');
+          }
+        });
+        });
+
+    },3000);
 })();
