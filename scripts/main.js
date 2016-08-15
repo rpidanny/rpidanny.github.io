@@ -318,7 +318,7 @@
        $(this).parent().addClass("active");
     });*/
     function getQuote(){
-      var url = "http://random-quotes-api.herokuapp.com/";
+      var url = "https://random-quotes-api.herokuapp.com/";
       if('cache' in window){
         cache.match(url).then(function(response) {
           if(response){

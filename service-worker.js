@@ -1,5 +1,5 @@
-var cacheName = 'cache-v8';
-var dataCacheName = 'quoteData-v2';
+var cacheName = 'cache-v9';
+var dataCacheName = 'quoteData-v3';
 var filesToCache = [
   '/',
   '/index.html',
@@ -50,7 +50,7 @@ self.addEventListener('activate', function(e) {
 
 self.addEventListener('fetch', function(e) {
   console.log('[ServiceWorker] Fetch', e.request.url);
-  var dataURL = "http://random-quotes-api.herokuapp.com/";
+  var dataURL = "https://random-quotes-api.herokuapp.com/";
   if(e.request.url.indexOf(dataURL)==0){
     e.respondWith(
       fetch(e.request)
