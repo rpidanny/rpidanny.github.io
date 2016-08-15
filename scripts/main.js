@@ -337,6 +337,8 @@
             console.log("[Quote] : "+data.quote+" [From Network]");
             $('.quote-body').html('<blockquote>'+data.quote+'</blockquote>');
             $('.quote-by').html(data.author);
+            $('.quotes').show();
+            $('.quotes').addClass('animated fadeIn');
         }
     });
     };

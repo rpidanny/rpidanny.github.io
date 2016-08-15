@@ -578,11 +578,12 @@ header{
 }
 
 .quotes{
+  display: none;
   text-align: center;
   color: #fff;
   padding: 20px;
   margin-bottom: 30px;
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -641,6 +642,9 @@ blockquote:after {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+    .quotes{
+      width: 60%;
+    }
     .container {
         max-width: 730px;
     }
@@ -666,6 +670,11 @@ blockquote:after {
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
+
+  .quotes{
+    width: 70%;
+  }
+
   .content {
     width: 700px;
   }
@@ -679,6 +688,10 @@ blockquote:after {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
+
+  .quotes{
+    width: 80%;
+  }
 
   .quotes{
     width: 80%;
