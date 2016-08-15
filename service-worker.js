@@ -1,5 +1,5 @@
-var cacheName = 'cache-v9';
-var dataCacheName = 'quoteData-v3';
+var cacheName = 'cache-v10';
+var dataCacheName = 'quoteData-v4';
 var filesToCache = [
   '/',
   '/index.html',
