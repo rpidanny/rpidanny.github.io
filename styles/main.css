@@ -599,9 +599,8 @@ header{
 blockquote {
     position: relative;
     marign: 0;
-    padding: 30px 120px;
+    padding: 30px 60px;
     text-align: center;
-    font-size: 30px;
 }
 blockquote:before, blockquote:after {
     position: absolute;
@@ -682,7 +681,7 @@ blockquote:after {
 @media only screen and (max-width: 767px) and (min-width: 480px) {
 
   .quotes{
-    width: 70%;
+    width: 80%;
   }
 
   .content {
