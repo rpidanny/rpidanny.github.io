@@ -319,28 +319,33 @@
     });*/
     function getQuote(){
       var url = "https://random-quotes-api.herokuapp.com/";
-      if('cache' in window){
-        cache.match(url).then(function(response) {
-          if(response){
+      if('caches' in window && !navigator.onLine){
+        caches.match(url).then(function(response) {
+          console.log("[Quote] : Cache Found");
+          if(response!=null){
             response.json().then(function(json){
-              console.log("[Quote] : "+json.quote)+" [From cache]";
+              console.log("[Quote] : "+json.quote+" [From cache]");
+              $('.quote-body').html('<blockquote>'+json.quote+'</blockquote>');
+              $('.quote-by').html(json.author);
+              $('.quotes').show();
+              $('.quotes').addClass('animated fadeIn');
             });
           }
         });
       }
 
       $.ajax({
-        url: url,
-        type: "GET",
-        dataType: "json",
-        success: function (data) {
-            console.log("[Quote] : "+data.quote+" [From Network]");
-            $('.quote-body').html('<blockquote>'+data.quote+'</blockquote>');
-            $('.quote-by').html(data.author);
-            $('.quotes').show();
-            $('.quotes').addClass('animated fadeIn');
-        }
-    });
+          url: url,
+          type: "GET",
+          dataType: "json",
+          success: function (data) {
+              console.log("[Quote] : "+data.quote+" [From Network]");
+              $('.quote-body').html('<blockquote>'+data.quote+'</blockquote>');
+              $('.quote-by').html(data.author);
+              $('.quotes').show();
+              $('.quotes').addClass('animated fadeIn');
+          }
+      });
     };
 
     setTimeout(function(){
