@@ -6,6 +6,7 @@
   initHeader();
   initAnimation();
   addListeners();
+  getQuote();
 
   function initHeader() {
     width = window.innerWidth;
@@ -316,5 +317,27 @@
        $(".nav").find(".active").removeClass("active");
        $(this).parent().addClass("active");
     });*/
+    function getQuote(){
+      var url = "http://random-quotes-api.herokuapp.com/";
+      if('cache' in window){
+        cache.match(url).then(function(response) {
+          if(response){
+            response.json().then(function(json){
+              console.log("[Quote] : "+json.quote)+" [From cache]";
+            });
+          }
+        });
+      }
 
+      $.ajax({
+        url: url,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            console.log("[Quote] : "+data.quote+" [From Network]");
+            $('.quote-body').html('<blockquote>'+data.quote+'</blockquote>');
+            $('.quote-by').html(data.author);
+        }
+    });
+    };
 })();
