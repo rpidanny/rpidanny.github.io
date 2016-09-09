@@ -1,5 +1,5 @@
-var cacheName = 'cache-v10.4';
-var dataCacheName = 'quoteData-v8';
+var cacheName = 'cache-v10.5';
+var dataCacheName = 'quoteData-v6';
 var filesToCache = [
   '/',
   '/index.html',
@@ -21,8 +21,6 @@ var filesToCache = [
   '/styles/fonts/glyphicons-halflings-regular.woff',
   '/styles/fonts/socicon-webfont.woff',
   '/styles/animate.css',
-  '/styles/demo.css',
-  '/styles/demo.css',
   '/images/abhishek1.jpg',
   '/images/vcard.png',
   '/images/to-top@2x.png',
