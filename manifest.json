@@ -1,8 +1,7 @@
 {
   "name":"Abhishek Maharjan",
   "Short_name":"Abhishek",
-  "start_url":".",
-  "scope":"/",
+  "start_url":"./index.html",
   "display":"standalone",
   "theme_color":"#9C27B0",
   "background-color":"#333",
