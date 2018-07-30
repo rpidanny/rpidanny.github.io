@@ -358,7 +358,7 @@
           duration:400,
           complete:function(){
             $('#main-title').removeClass("animated hinge");
-            $("#main-title").addClass('animated rubberBand infinite');
+            // $("#main-title").addClass('animated rubberBand infinite');
           }
         });
         });
