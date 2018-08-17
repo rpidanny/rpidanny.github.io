@@ -2,23 +2,23 @@
  * UTILITIES
  */
 @font-face {
-  font-family: 'socicon';
-  src: url('fonts/socicon-webfont.eot');
-  src: url('fonts/socicon-webfont.eot?#iefix') format('embedded-opentype'),
-  url('fonts/socicon-webfont.woff') format('woff'),
-  url('fonts/socicon-webfont.ttf') format('truetype'),
-  url('fonts/socicon-webfont.svg#sociconregular') format('svg');
+  font-family: "socicon";
+  src: url("fonts/socicon-webfont.eot");
+  src: url("fonts/socicon-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/socicon-webfont.woff") format("woff"),
+    url("fonts/socicon-webfont.ttf") format("truetype"),
+    url("fonts/socicon-webfont.svg#sociconregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 .saucisson {
-  font-family: 'socicon' !important;
+  font-family: "socicon" !important;
 }
 
 .no-underline,
 .no-underline:hover,
-.no-underline:focus{
+.no-underline:focus {
   text-decoration: none;
 }
 
@@ -30,15 +30,19 @@
  * SERIOUS BUSINESS
  */
 
-body { padding-top: 0px;position: relative;}
+body {
+  padding-top: 0px;
+  position: relative;
+}
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
-.navbar, .footer {
+.navbar,
+.footer {
   margin-bottom: 0;
   background: #2d2d2d;
 }
@@ -85,21 +89,29 @@ body { padding-top: 0px;position: relative;}
   left: 0;
   width: 100%;
   height: 6px;
-  content: '';
+  content: "";
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  -webkit-transform: translate3d(0,150%,0);
-  transform: translate3d(0,150%,0);
+  -webkit-transform: translate3d(0, 150%, 0);
+  transform: translate3d(0, 150%, 0);
 }
 
-.navbar-style-underline nav li.nav-home a::after { background: #2CC185;}
-.navbar-style-underline nav li.nav-about a::after { background: #6ac8c8;}
-.navbar-style-underline nav li.nav-resume a::after { background: #f97c39;}
-.navbar-style-underline nav li.nav-contact a::after { background: #ffbe00;}
+.navbar-style-underline nav li.nav-home a::after {
+  background: #2cc185;
+}
+.navbar-style-underline nav li.nav-about a::after {
+  background: #6ac8c8;
+}
+.navbar-style-underline nav li.nav-resume a::after {
+  background: #f97c39;
+}
+.navbar-style-underline nav li.nav-contact a::after {
+  background: #ffbe00;
+}
 
 .navbar-style-underline nav li.active a::after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .navbar-style-underline nav a span {
@@ -115,8 +127,8 @@ a {
 }
 
 .overlay {
-  height:100%;
-  min-height:100%;
+  height: 100%;
+  min-height: 100%;
 }
 
 /* Header */
@@ -130,7 +142,7 @@ a {
   line-height: 1.25;
   margin-right: -15px;
   margin-left: -15px;
-  font-family: 'Raleway', Calibri, Arial, sans-serif;
+  font-family: "Raleway", Calibri, Arial, sans-serif;
   /*background: #333 url('../images/demo-1-bg.jpg') center 0 no-repeat fixed;*/
   background: #333 url(../images/jGIGWOA.jpg) center 0 repeat fixed;
 }
@@ -143,8 +155,8 @@ a {
   text-align: center;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate3d(-50%,-50%,0);
-  transform: translate3d(-50%,-50%,0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   text-transform: uppercase;
   font-size: 4.2em;
   letter-spacing: 0.1em;
@@ -163,9 +175,9 @@ a {
 
 /* Custom page footer */
 .footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -191,7 +203,7 @@ a {
 }
 
 .title p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 15px;
   line-height: 22px;
   position: relative;
@@ -249,8 +261,8 @@ a {
 }
 
 .profile .ico a {
-  background: #2D2D2D;
-  border: 10px solid #FFFFFF;
+  background: #2d2d2d;
+  border: 10px solid #ffffff;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -259,7 +271,7 @@ a {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   font-size: 19px;
   height: 60px;
@@ -270,11 +282,11 @@ a {
 }
 
 .profile .ico a:hover {
-  background: #6AC8C8;
+  background: #6ac8c8;
 }
 
 .img-profile:before {
-  border-top: 1px solid #EFEFEF;
+  border-top: 1px solid #efefef;
   content: "";
   display: block;
   left: 50%;
@@ -286,7 +298,7 @@ a {
 }
 
 .img-profile:after {
-  border-top: 1px solid #EFEFEF;
+  border-top: 1px solid #efefef;
   content: "";
   display: block;
   margin-right: 130px;
@@ -339,7 +351,7 @@ a {
 }
 
 .divider span:before {
-  border-bottom: 1px dashed #EFEFEF;
+  border-bottom: 1px dashed #efefef;
   content: "";
   display: block;
   left: 0;
@@ -362,15 +374,15 @@ a {
 }
 
 .address i {
-  background: none repeat scroll 0 0 #2D2D2D;
-  border: 10px solid #FFFFFF;
+  background: none repeat scroll 0 0 #2d2d2d;
+  border: 10px solid #ffffff;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
   /* background-clip: padding-box; */
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   font-size: 29px;
   height: 65px;
@@ -403,8 +415,8 @@ a {
 }
 
 .info li .ico {
-  background: #2D2D2D;
-  border: 10px solid #FFFFFF;
+  background: #2d2d2d;
+  border: 10px solid #ffffff;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -413,7 +425,7 @@ a {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   font-size: 20px;
   height: 60px;
@@ -432,15 +444,15 @@ a {
 }
 
 .work-ico {
-  background: #2D2D2D;
-  border: 5px solid #FFFFFF;
+  background: #2d2d2d;
+  border: 5px solid #ffffff;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
   background-clip: padding-box;
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   height: 36px;
   left: -4%;
@@ -463,8 +475,8 @@ a {
 }
 
 .form-btn {
-  background: #2D2D2D;
-  color: #FFFFFF;
+  background: #2d2d2d;
+  color: #ffffff;
   display: block;
   font-size: 14px;
   height: 45px;
@@ -476,10 +488,10 @@ a {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   float: right;
- }
+}
 
 .form-btn:hover {
-  background: #2D2D2D;
+  background: #2d2d2d;
   color: #999999;
 }
 
@@ -495,8 +507,8 @@ a {
   display: none;
   text-decoration: none;
   position: fixed;
-  bottom: .75rem;
-  right: .75rem;
+  bottom: 0.75rem;
+  right: 0.75rem;
   overflow: hidden;
   width: 43px;
   height: 43px;
@@ -549,8 +561,8 @@ a {
 }
 
 .spinner .rect3 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
 
 .spinner .rect4 {
@@ -564,20 +576,20 @@ a {
 }
 
 .ico > a {
-    color: #FFFFFF;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 p > a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
-header{
+header {
   display: none;
 }
 
-.quotes{
+.quotes {
   display: none;
   text-align: center;
   color: #fff;
@@ -592,48 +604,58 @@ header{
   margin-bottom: 0;
 }
 
-.quote-by{
+.quote-by {
   text-align: right;
 }
 /* =Blockquote
 -------------------------------------------------------------- */
 blockquote {
-    position: relative;
-    marign: 0;
-    padding: 30px 60px;
-    text-align: center;
+  position: relative;
+  marign: 0;
+  padding: 30px 60px;
+  text-align: center;
 }
-blockquote:before, blockquote:after {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    font-size: 120px;
-    line-height: 1;
+blockquote:before,
+blockquote:after {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  font-size: 120px;
+  line-height: 1;
 }
 blockquote:before {
-    top: 0;
-    left: 0;
-    content: "\201C";
+  top: 0;
+  left: 0;
+  content: "\201C";
 }
 blockquote:after {
-    top: 0;
-    right: 0;
-    content: "\201D";
+  top: 0;
+  right: 0;
+  content: "\201D";
 }
 
 @-webkit-keyframes stretchdelay {
-  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
-  20% { -webkit-transform: scaleY(1.0) }
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
 }
 
 @keyframes stretchdelay {
-  0%, 40%, 100% {
+  0%,
+  40%,
+  100% {
     transform: scaleY(0.4);
     -webkit-transform: scaleY(0.4);
-  }  20% {
-       transform: scaleY(1.0);
-       -webkit-transform: scaleY(1.0);
-     }
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
 }
 
 /*
@@ -642,36 +664,34 @@ blockquote:after {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .quotes{
-      width: 60%;
-    }
-    .container {
-        max-width: 730px;
-    }
+  .quotes {
+    width: 60%;
+  }
+  .container {
+    max-width: 730px;
+  }
 
-    .navbar .navbar-nav {
-      display: inline-block;
-      float: none;
-      vertical-align: top;
-    }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
 
-    .navbar .navbar-collapse {
-      text-align: center;
-    }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
 
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
-
-  .quotes{
+  .quotes {
     width: 70%;
   }
 
@@ -688,12 +708,11 @@ blockquote:after {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
-
-  .quotes{
+  .quotes {
     width: 80%;
   }
 
-  .quotes{
+  .quotes {
     width: 80%;
   }
 
@@ -730,11 +749,10 @@ blockquote:after {
 }
 
 @media only screen and (max-width: 479px) {
-
   /*header{
       display:none;
   }*/
-  .quotes{
+  .quotes {
     width: 95%;
   }
   .content {
@@ -749,7 +767,8 @@ blockquote:after {
     width: 100%;
   }
 
-  .img-profile:before,.img-profile:after {
+  .img-profile:before,
+  .img-profile:after {
     display: none;
   }
 
@@ -788,7 +807,7 @@ blockquote:after {
 }
 
 @media (max-width: 767px) {
-    .main-title{
-      font-size: 2em;
-    }
+  .main-title {
+    font-size: 2em;
+  }
 }
