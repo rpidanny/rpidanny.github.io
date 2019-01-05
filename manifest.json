@@ -1,15 +1,25 @@
 {
+  "short_name": "Abhishek",
   "name": "Abhishek Maharjan",
-  "Short_name": "Abhishek",
-  "start_url": "./test.html",
-  "display": "standalone",
-  "theme_color": "#9C27B0",
-  "background-color": "#333",
   "icons": [
     {
-      "src": "/favicon.png",
-      "size": "512x512",
-      "type": "image/png"
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icon-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
-  ]
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#9C27B0",
+  "background_color": "#333"
 }
